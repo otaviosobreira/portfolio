@@ -169,6 +169,14 @@ footer {
     background: linear-gradient(135deg, #2563eb, #7c3aed);
 }
 
+.projeto-2{
+  background: linear-gradient(135deg, #05fad1, #0dfa05);
+}
+
+.projeto-3{
+  background: linear-gradient(135deg, #f82904, #fae105);
+}
+
 .projetos article h3{
     font-size: 16px;
     padding: 14px 16px 4px 16px;
