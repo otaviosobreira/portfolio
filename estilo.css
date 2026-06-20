@@ -1,0 +1,192 @@
+/* ===== Reset universal ===== */
+/* Zera margens e paddings padrão do navegador
+       e padroniza o cálculo de tamanho dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Base do documento ===== */
+body{
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+/* ===== Cabeçalho centralizado ===== */
+header{
+    display: flex;
+    align-items: center; /*alinha todos os elementos de forma vertical*/
+    gap: 15px;/*espaço entre os elementos*/
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;/*borda arredondada*/
+    max-width: 720px;
+    margin: 0 auto 32px auto;/* top right bottom left */
+    padding: 24px;
+}
+header h1{
+    margin-bottom: -4px;
+}
+header img {
+  width: 140px; /*largura*/
+  height: 140px; /*altura */
+  border-radius: 50%;/*coloca a foto redonda*/
+  border: 4px solid #2563eb;
+  object-fit: cover;/*faz a imagem caber no espaço colocada*/
+} 
+h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.cargo {
+  color: #475569;
+  font-size: 18px;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+}
+/* ===== Cada bloco vira um card ===== */
+section {
+  background: white;
+  padding: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+h2 {
+  font-size: 24px;
+  color: #2563eb;
+  margin-bottom: 16px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+.destaque{
+    background: #fef3c7;
+    padding: 16px;
+    border-left: 4px solid #f59e0b;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+/* ===== Lista ===== */
+ul {
+  padding-left: 24px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* ===== Link ===== */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 16px;
+  margin-top: 8px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Botão ===== */
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  text-align: center;
+  margin-top: 48px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+/*SKILLS*/
+
+.skills ul{
+    display: flex;
+    list-style-type: none;/*retira as bolinhas*/
+    gap: 8px;/*espaço entre os elementos*/
+    flex-wrap: wrap;/*faz quebra de linha nos elementos*/
+    padding: 0;
+}
+
+.skills ul li{
+    background-color: #eff6ff;
+    color: #2563eb;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.projetos{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.projetos article{
+    flex: 1;
+    min-width: 180px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.projetos .projeto-imagem{
+    height: 100px;
+}
+
+.projeto-1{
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.projetos article h3{
+    font-size: 16px;
+    padding: 14px 16px 4px 16px;
+}
+
+.projetos article p{
+    padding: 0 16px;
+    color: #64748b;
+    flex-grow: 1;/*ajusta todos com o mesmo tamanho*/
+}
+
+.projetos article a{
+    margin: 12px 16px 16px 12px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.projetos article a:hover{
+    text-decoration: underline;
+}
