@@ -60,12 +60,23 @@
             <p>Você pode entrar em contato comigo pelo meu linkedin abaixo
             ou ver meus projetos no github</p>
             <a href="https://github.com">Meu github</a>
-            <button>Enviar mensagem</button>
+            <button class="btn-mensagem">Enviar mensagem</button>
 
+            <form class="formulario-contato escondido">
+                <label>Nome: </label>
+                <input type="text" class="input-nome" />
+                <label>Email: </label>
+                <input type="text" class="input-email" />
+                <label>Mensagem: </label>
+                <textarea class="input-mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p class="feedback"></p>
         </section>
     </main>
     <footer>
         <p>Feito com html, css, javascript e java</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
